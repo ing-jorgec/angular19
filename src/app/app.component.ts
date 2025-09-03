@@ -3,11 +3,14 @@ import { RouterOutlet } from '@angular/router';
 import { Toast } from 'primeng/toast';
 import { ButtonModule } from 'primeng/button';
 import { MessageService } from 'primeng/api';
+import { MiComponenteComponent } from "./micomponente/micomponente.component";
+import { MiComponente2Component } from './micomponente/micomponente2.component';
+
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet,Toast, ButtonModule],
+  
+  imports: [RouterOutlet, Toast, ButtonModule, MiComponenteComponent, MiComponente2Component],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   providers: [MessageService]
